@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ergasia Diepafes</title>
+</head>
+<body>
+    <div class="meeting-container">
+        <div class="video-container">
+            <video src="zoom-call.mp4" autoplay muted></video>
+
+            <div class="events-container">
+                <div class="show-events-btns">
+                    <button id="event-notifications-btn">
+                        <img src="icons/notification.svg" alt="Bell">
+                    </button>
+    
+                    <button id="chat-btn">
+                        <img src="icons/chat.svg" alt="Chat">
+                    </button>
+                </div>
+
+                <div class="event-list" id="notifications">
+                    <div class="event-list-header">
+                        <h3 class="title">Notifications</h3>
+                        <button class="close-event-list" id="close-notifications">&#10006;</button>
+                    </div>
+
+                    <div class="event-list-body">
+                    </div>
+                </div>
+
+                <div class="event-list" id="chat">
+                    <div class="event-list-header">
+                        <h3 class="title">Chat</h3>
+                        <button class="close-event-list" id="close-chat">&#10006;</button>
+                    </div>
+
+                    <div class="event-list-body">
+                    </div>
+
+                    <form>
+                        <input type="text" placeholder="Enter your message here...">
+                        <button>
+                            <img src="icons/submit.svg" alt="Submit">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="users-container">
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 1</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 2</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 3</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 4</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 5</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 6</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+
+            <div class="user">
+                <img src="icons/user.svg" alt="User">
+                <span>user 7</span>
+                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
