@@ -20,6 +20,7 @@
     
                     <button id="chat-btn">
                         <img src="icons/chat.svg" alt="Chat">
+                        <span id="unread-messages" class="hidden"></span>
                     </button>
                 </div>
 
@@ -52,47 +53,57 @@
             </div>
         </div>
 
-        <div class="users-container">
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 1</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+        <div class="carousel">
+            <div class="indicator left-indicator hidden" id="left-indicator">
+                <img src="./icons/chevron_left.svg" alt="Left Arrow">
             </div>
 
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 2</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            <div class="users-container" id="users-container">
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>Michailidis Michail</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>Alexandros Mouratidis</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>Omiros Malakis</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>Kwnstantinos Sanidiwtis</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>user 5</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>user 6</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
+    
+                <div class="user">
+                    <img src="icons/user.svg" alt="User">
+                    <span>user 7</span>
+                    <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+                </div>
             </div>
 
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 3</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
-            </div>
-
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 4</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
-            </div>
-
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 5</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
-            </div>
-
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 6</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
-            </div>
-
-            <div class="user">
-                <img src="icons/user.svg" alt="User">
-                <span>user 7</span>
-                <img src="icons/no_camera.svg" alt="No Camera" class="no-camera">
+            <div class="indicator right-indicator" id="right-indicator">
+                <img src="./icons/chevron_right.svg" alt="Right Arrow">
             </div>
         </div>
     </div>

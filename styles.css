@@ -26,6 +26,10 @@ body {
     width: 100%;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* Video Container Styles */
 .video-container {
     background: black;
@@ -140,7 +144,6 @@ body {
 .event-list#chat .event-list-body {
     max-height: calc(100% - 60px - 20px - var(--message-form-height));
     height: calc(100% - 60px - 20px - var(--message-form-height));
-    padding: 10px 0;
 }
 
 .event-list-body::-webkit-scrollbar {
@@ -226,6 +229,7 @@ body {
     display: flex;
     align-items: center;
     height: var(--message-form-height);
+    margin-top: 10px;
 }
 
 .events-container form input {
@@ -259,14 +263,70 @@ body {
     height: auto;
 }
 
+#chat-btn{
+    position: relative;
+}
+
+#chat-btn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background: rgb(212, 45, 45);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    padding: 2px;
+}
+
 /* ==================================================== */
 
 /* Users Container Styles */
-.users-container {
-    width: 100%;
+.carousel {
     height: var(--users-container-height);
-    display: flex;
+    width: 100%;
+    position: relative;
     overflow: hidden;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    transition: background-color 100ms ease-in-out;
+}
+
+.indicator:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.indicator img{
+    width: 90%;
+    height: auto;
+}
+
+.left-indicator {
+    left: 0;
+}
+
+.right-indicator {
+    right: 0;
+}
+
+.users-container {
+    height: 100%;
+    display: flex;
+    transition: transform 150ms ease-in-out;
 }
 
 .users-container .user {
@@ -299,6 +359,7 @@ body {
     font-size: 1.5rem;
     margin-top: 5px;
     font-weight: 400;
+    text-align: center;
 }
 
 .users-container .user img.no-camera {
@@ -417,6 +478,28 @@ body {
     
     .events-container form input {
         font-size: .9rem;
+    }
+
+    #chat-btn span{
+        height: 23px;
+        width: 23px;
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .users-container .user {
+        --total-users-showing: 2;
+    }
+
+    .indicator {
+        width: 35px;
+    }
+}
+
+@media(max-width: 325px) {
+    .users-container .user {
+        --total-users-showing: 1;
     }
 }
 /* ==================================================== */
